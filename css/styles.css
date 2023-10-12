@@ -27,6 +27,7 @@ a[href="#WEBSTUDIO"] {
 .link-contact {
     color: var(--SLATE, #434455);
     /* Body Medium */
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     text-decoration: none;
@@ -36,7 +37,7 @@ a[href="#WEBSTUDIO"] {
 header {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
-    width: 1158px;
+    width: 1440px;
     height: 72px;
     flex-shrink: 0;
     display: flex;
@@ -56,6 +57,15 @@ div.container {
     display: flex;
     align-items: flex-start;
     gap: 40px;
+    color: var(--NAVY-BLUE, #2E2F42);
+
+    /* Body Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
     
 }
 
@@ -63,7 +73,8 @@ footer {
     background: var(--NAVY-BLUE, #2E2F42);
     padding-top: 140px;
     padding-bottom: 100px;
-    padding-left: 56px
+    padding-left: 56px;
+    
 } 
 
 .footer-txt {
@@ -72,7 +83,7 @@ footer {
     text-align: left;
 }
 
-h2 {
+h2.what-are-we-doing {
     color: var(--NAVY-BLUE, #2E2F42);
     /* Header 2 */
     font-family: Roboto;
@@ -111,29 +122,59 @@ p {
     margin: 0;
 }
 
+.footer-socials {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer-socials-icon {
+    background-color: var(--IRIS, #4D5AE5);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials-icon svg {
+    fill: var(--CLOUD, #F4F4FD);
+}
+
+.footer-social-media {
+    color: var(--WHITE, #FFF);
+    display: flex;
+    /* Body Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+}
 /*END OF GENERAL*/
 
 
 /* MAIN PAGE*/
 
 body {
-    color: var(--SLATE, #434455);
-    /* Body */
+    /*color: var(--SLATE, #434455);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
-    width: 1158px;
-    height: 2592px;
+    line-height: 1.5;*/
+    width: 1440px;
+    /*height: 2592px;*/
 }
 
 ul {
     list-style: none;
     display: flex;
     margin-left: 0;
-    padding-inline-start: 0;
-    /*default padding-inline-start 40px - adjusted to 0 to fit the 1158 width*/
+    padding-inline-start: 156px;
+    /*default padding-inline-start 40px - adjusted to 0 to fit the 1440 width*/
 }
 
 .feature {
@@ -165,7 +206,7 @@ ul {
 
 /*HERO*/
 .hero {
-    width: 1158px;
+    width: 1440px;
     gap: 48px;
 }
 
@@ -180,7 +221,7 @@ ul {
     font-weight: 700;
     line-height: 60px; /* 107.143% */
     letter-spacing: 1.12px;
-    width: 1158px;
+    width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
     margin: 0;
@@ -201,14 +242,24 @@ ul {
 
 .section3 {
     background: var(--CLOUD, #F4F4FD);
-    width: 1158px;
-    height: 732px;
+    width: 1440px;
+    height: 780px;
 }
 
-h2.sec3-title {
+h2.sec3-title {  
+    color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
     margin-top: 120px;
     padding-top: 120px;
+    margin-bottom: 72px;
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
 }
 
 .team-card {
@@ -217,8 +268,8 @@ h2.sec3-title {
     flex-direction: column;
     /*justify-content: center;*/
     /*align-items: center;*/
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: 24px;
+    /*margin-left: 24px;*/
     border-radius: 0px 0px 4px 4px;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -239,17 +290,86 @@ ul.card-content {
     text-align: center;
 }
 
-.name-card2 {
-    margin-top: 32px;
-    margin-bottom: 0px;
-    margin-left: 16px;
-}
 
 .title-card {
     margin-top: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
     text-align: center;
 }
+
+.team-socials {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 36px;
+}
+
+.team-socials-icon {
+    background-color: var(--IRIS, #4D5AE5);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-socials-icon svg {
+    fill: var(--CLOUD, #F4F4FD);
+   
+}
+
+.team-socials-icon:hover,
+.team-socials-icon:focus {
+    border-color: var(--iris);
+    cursor: pointer;
+    
+}
+
+.team-socials-icon:hover svg,
+.team-socials-icon:focus svg {
+    fill: currentColor;
+}
+
+/* CUSTOMERS STYLING */
+
+.section-title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    margin-bottom: 72px;
+    margin-top: 120px;
+
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.customer-icon {
+    border: 1px solid #8e8f99;
+    padding: 16px 32px;
+}
+
+.customer-icon svg {
+    fill: #8e8f99;
+    /*fill: currentColor;*/
+}
+
+.customer-icon:hover,
+.customer-icon:focus {
+    border-color: var(--iris);
+    cursor: pointer;
+}
+
+.customer-icon:hover svg,
+.customer-icon:focus svg {
+    /*fill: var(--iris);*/
+    fill: currentColor;
+}
+
 /*END OF MAIN PAGE*/
 
 /*PORTFILIO-PROJECT CARDS*/
@@ -307,7 +427,7 @@ button {
 
 .body2 {
     background: #FFF;
-    width: 1158px;
+    width: 1440px;
     height: 2076px;
 }
 
@@ -315,8 +435,8 @@ button {
     display: flex;
     padding: 0px;
     flex-direction: column;
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: 24px;
+    /*margin-left: 12px;*/
     margin-top: 24px;
     margin-bottom: 24px;
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -325,7 +445,18 @@ button {
 
 .title-card2 {
     margin-top: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
     margin-left: 16px;
 }
+
+
+.name-card2 {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+
+
+
+
 /*END OF PORTFOLIO*/
