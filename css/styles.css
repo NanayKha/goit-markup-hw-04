@@ -14,13 +14,14 @@ a[href="#WEBSTUDIO"] {
 .link {
     font-family: Roboto;
     font-size: 16px;
+    gap: 40px;
     line-height: 1.5;
     text-decoration: none;
     letter-spacing: 0.32px;
 }
 
-.link:hover,
-.link:focus {
+.main-link:hover,
+.main-link:focus {
     color: var(--OCEAN, #404BBF);
 }
 
@@ -45,8 +46,7 @@ a[href="#WEBSTUDIO"] {
     line-height: 1.5;
     text-decoration: none;
     letter-spacing: 0.32px;
-    gap: 40px;
-    margin-left: 90px;
+    margin-left: 40px;
 }
 
 header {
@@ -71,6 +71,8 @@ div.container {
 
 footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    display: flex;
+    align-items: center;
 }
 .footer-bg {
     display: flex;
@@ -89,6 +91,9 @@ footer {
 .footer-socials {
     display: flex;
     gap: 16px;
+    padding-top: 16px;
+    height: 40px;
+    padding-left: 269px;
 }
 
 .footer-socials-icon {
@@ -106,8 +111,11 @@ footer {
 }
 
 .footer-social-media {
+    /*display: flex;*/
     color: var(--WHITE, #FFF);
-    display: flex;
+    padding-left: 269px;
+    margin: 0px;
+    height: 24px;
     /* Body Medium */
     font-family: Roboto;
     font-size: 16px;
