@@ -24,7 +24,6 @@ a[href="#WEBSTUDIO"] {
 .main-link:focus {
     color: var(--OCEAN, #404BBF);
 }
-
 .main-link {
     color: #2E2F42;
     text-decoration: none;
@@ -34,8 +33,7 @@ a[href="#WEBSTUDIO"] {
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
-    
+    letter-spacing: 0.32px;   
 }
 
 .contact-link {
@@ -47,6 +45,11 @@ a[href="#WEBSTUDIO"] {
     text-decoration: none;
     letter-spacing: 0.32px;
     margin-left: 40px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--OCEAN, #404BBF);
 }
 
 header {
@@ -93,7 +96,7 @@ footer {
     gap: 16px;
     padding-top: 16px;
     height: 40px;
-    padding-left: 269px;
+    padding-left: 269px;  
 }
 
 .footer-socials-icon {
@@ -103,11 +106,22 @@ footer {
     width: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .footer-socials-icon svg {
-    fill: var(--CLOUD, #F4F4FD);
+    fill: var(--CLOUD, #F4F4FD)
+}
+
+.footer-socials-icon:hover,
+.footer-socials-icon:focus {
+    background: #31D0AA;
+    cursor: pointer;
+}
+
+.footer-socials-icon:hover svg,
+.footer-socials-icon:focus svg {
+    fill: #F4F4FD;
 }
 
 .footer-social-media {
@@ -303,7 +317,7 @@ ul.card-content {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}   
 
 .team-socials-icon svg {
     fill: var(--CLOUD, #F4F4FD);
@@ -312,14 +326,13 @@ ul.card-content {
 
 .team-socials-icon:hover,
 .team-socials-icon:focus {
-    border-color: var(--iris);
+    background: #31D0AA;
     cursor: pointer;
-    
 }
 
 .team-socials-icon:hover svg,
 .team-socials-icon:focus svg {
-    fill: currentColor;
+    fill: #F4F4FD;
 }
 
 
